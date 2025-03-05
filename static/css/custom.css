@@ -1,0 +1,61 @@
+body {
+  font-family: 'Source Han Serif CN', serif;
+  line-height: 1.75;
+}
+
+.hljs {
+  padding: 1em;
+}
+
+.main .date {
+  color: #666;
+}
+
+.post-tags {
+  margin-top: 1em;
+}
+
+.post-nav {
+  margin-top: 2rem;
+}
+
+/*image display*/
+
+p:has(> img:only-child),
+p:has(> a:only-child > img) {
+  text-align: center;
+  margin: 2em 0;
+}
+
+a:has(> img) {
+  border-bottom: none;
+}
+
+/*lightbox*/
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 5px 12.5px rgba(244, 182, 204, 0.3);
+}
