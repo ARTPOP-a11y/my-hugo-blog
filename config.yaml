@@ -14,8 +14,6 @@ menu:
     - name: "tags"
       url: "/tags/"
       weight: 1
-    - name: "subscribe"
-      url: "/index.xml"
 
 params:
   description: ""
@@ -23,29 +21,10 @@ params:
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
-  rss:
-    includeContent: true
-    fullTextFeed: true
 
 markup:
   highlight:
     codeFences: false
   goldmark:
     renderer:
-      unsafe: true
-
-outputs:
-  home:
-    - HTML
-    - RSS
-
-mediaTypes:
-  "application/rss+xml":
-    suffixes:
-      - xml
-outputFormats:
-  RSS:
-    mediatype: "application/rss+xml"
-    baseName: "index"
-    isPlainText: false
-    notAlternative: true
+      unsafe: false
