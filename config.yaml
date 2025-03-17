@@ -23,10 +23,13 @@ params:
   highlightjsLang: ["latex"]
   highlightjsTheme: "github"
   highlightjsVersion: "11.7.0"
+  rss:
+    includeContent: true
+    fullTextFeed: true
 
 markup:
   highlight:
     codeFences: false
   goldmark:
     renderer:
-      unsafe: false
+      unsafe: true
