@@ -140,6 +140,10 @@ a:has(> img) {
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
+  img {
+    max-height: 433px;
+    width: auto;
+  }
   .swiper-container {
     height: 433px;
   }
