@@ -1,0 +1,19 @@
+{{ if .Section }}
+<nav class="post-nav">
+  <span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</span>
+  <span class="nav-next">{{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> &rarr;{{ end }}</span>
+</nav>
+{{ end }}
+
+<script src="//cdn.jsdelivr.net/npm/@xiee/utils/js/math-code.js" defer></script>
+<script src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+
+<script>
+  (d => {
+  d.querySelectorAll('p').forEach(p => {
+    if (p.innerText === '* * *') p.style.textAlign = 'center';
+  });
+})(document);
+</script>
+
+<script src="/js/swiper-init.js" defer></script>

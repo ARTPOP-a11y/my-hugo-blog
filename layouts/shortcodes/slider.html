@@ -1,0 +1,13 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      {{ range split .Inner "," }}
+      {{ $imageData := split . "|" }}
+      <div class="swiper-slide">
+        <img src="{{ index $imageData 0 | safeURL }}" alt="{{ index $imageData 1 }}" class="clickable-img">
+      </div>
+      {{ end }}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+  

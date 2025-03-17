@@ -1,0 +1,75 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[build.environment]
+HUGO_VERSION = "0.123.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+# Production context settings
+[context.production.environment]
+HUGO_ENV = "production"
+
+# Branch deploy settings
+[context.branch-deploy.environment]
+HUGO_ENV = "staging"
+
+# Preview deploy settings
+[context.deploy-preview.environment]
+HUGO_ENV = "staging"
+
+# Security response headers settings
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "interest-cohort=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' cdn.jsdelivr.net mathjax.rstudio.com; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self';"    
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Cache control
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+# Redirect settings
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://bbb.zhangshihai.com/*"
+  to = "https://blahblahblah.zhangshihai.com/:splat"
+  status = 301
+  force = true
+
+# Performance optimization settings
+[build.processing]
+  skip_processing = false
+  css.bundle = true
+  css.minify = true
+  js.bundle = true
+  js.minify = true
+  images.compress = false

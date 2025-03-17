@@ -1,0 +1,32 @@
+baseurl: /
+languageCode: en-us
+title: room
+theme: hugo-ivy
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+preserveTaxonomyNames: true
+footnotereturnlinkcontents: ↩
+
+permalinks:
+  posts: /post/:year/:month/:day/:slug/
+
+menu:
+  main:
+    - name: "tags"
+      url: "/tags/"
+      weight: 1
+    - name: "subscribe"
+      url: "/index.xml"
+
+params:
+  description: ""
+  footer: ""
+  highlightjsLang: ["latex"]
+  highlightjsTheme: "github"
+  highlightjsVersion: "11.7.0"
+
+markup:
+  highlight:
+    codeFences: false
+  goldmark:
+    renderer:
+      unsafe: false
