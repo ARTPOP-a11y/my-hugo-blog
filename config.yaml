@@ -33,3 +33,19 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+
+mediaTypes:
+  "application/rss+xml":
+    suffixes:
+      - xml
+outputFormats:
+  RSS:
+    mediatype: "application/rss+xml"
+    baseName: "index"
+    isPlainText: false
+    notAlternative: true
