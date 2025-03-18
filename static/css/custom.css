@@ -8,7 +8,7 @@ body {
 }
 
 img {
-  max-height: 500px;
+  max-height: 700px;
   width: auto;
 }
 
@@ -90,7 +90,7 @@ a:has(> img) {
 
 .swiper-slide img {
   max-height: 500px;
-  max-width: calc(100% - 88px);
+  max-width: calc(100% - 125px);
   width: auto;
   height: auto;
   object-fit: contain;
@@ -141,14 +141,27 @@ a:has(> img) {
 /* Media query for mobile devices */
 @media (max-width: 480px) {
   img {
-    max-height: 433px;
+    max-height: 430px;
     width: auto;
   }
   .swiper-container {
-    height: 433px;
+    height: 430px;
   }
   .swiper-slide img {
-    max-height: 433px;
+    max-height: 430px;
+    max-width: calc(100% - 1vh);
+  }
+}
+@media (max-width: 414px) {
+  img {
+    max-height: 414px;
+    width: auto;
+  }
+  .swiper-container {
+    height: 414px;
+  }
+  .swiper-slide img {
+    max-height: 414px;
     max-width: 100%;
   }
 }
