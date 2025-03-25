@@ -7,7 +7,7 @@ preserveTaxonomyNames: true
 footnotereturnlinkcontents: ↩
 
 permalinks:
-  posts: /post/:year/:month/:day/:slug/
+  posts: /posts/:year/:month/:day/:slug/
 
 menu:
   main:
