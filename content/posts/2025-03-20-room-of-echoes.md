@@ -8,6 +8,6 @@ tags:
   - about
 ---
 
-I promise I’m proud of what I share with you. Whether or not it is a mistake.
+I promise I’m proud of what I share with you. Whether or not it is a mistake. 不喜欢就滚
 
 ![a selfie](https://pic.imgdd.cc/item/67dba517218de299ca935ccb.jpg)
