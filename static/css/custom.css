@@ -7,11 +7,6 @@ body {
   padding: 1em;
 }
 
-img {
-  max-height: 700px;
-  width: auto;
-}
-
 .main .date {
   color: #666;
 }
@@ -140,10 +135,6 @@ a:has(> img) {
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
-  img {
-    max-height: 430px;
-    width: auto;
-  }
   .swiper-container {
     height: 430px;
   }
@@ -153,10 +144,6 @@ a:has(> img) {
   }
 }
 @media (max-width: 414px) {
-  img {
-    max-height: 414px;
-    width: auto;
-  }
   .swiper-container {
     height: 414px;
   }
