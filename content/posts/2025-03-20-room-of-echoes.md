@@ -5,7 +5,6 @@ title: "Room of echoes"
 slug: "room-of-echoes"
 tags:
   - 说话
-  - about
 ---
 
 I promise I’m proud of what I share with you. Whether or not it is a mistake. 不喜欢就滚
